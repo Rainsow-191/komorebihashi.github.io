@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primero - Biblioteca Virtual</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff3e0; /* Color más claro */
+            color: #333;
+            text-align: center;
+            padding: 20px; /* Espacio adicional alrededor del contenido */
+        }
+
+        header {
+            background-color: #d76d6d; /* Color rojo */
+            padding: 20px;
+            color: white;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column; /* Mantener en columna para dispositivos pequeños */
+            align-items: center; /* Centra los elementos horizontalmente */
+            margin: 20px;
+        }
+
+        .book-list {
+            display: flex;
+            flex-wrap: wrap; /* Permite que los libros se muevan a la siguiente línea */
+            justify-content: center; /* Centra los elementos horizontalmente */
+            margin-top: 20px; /* Espacio adicional arriba */
+        }
+
+        .book-item {
+            background-color: #ffccbc; /* Color claro para los botones */
+            border: 2px solid #d76d6d; /* Borde rojo */
+            border-radius: 15px; /* Bordes más redondeados */
+            padding: 20px; /* Más espacio interno para simular una portada de libro */
+            margin: 10px; /* Más espacio entre libros */
+            text-decoration: none; /* Sin subrayado */
+            color: #333; /* Color del texto */
+            transition: transform 0.2s, background-color 0.3s; /* Transiciones suaves */
+            width: 150px; /* Ancho fijo para todos los botones */
+            height: 250px; /* Altura ajustada para incluir la imagen */
+            display: flex; /* Permite centrar el texto */
+            flex-direction: column; /* Coloca la imagen y el texto en columna */
+            align-items: center; /* Centra horizontalmente los elementos */
+            justify-content: flex-start; /* Alinea los elementos al inicio */
+        }
+
+        .book-item img {
+            width: 120%; /* Ajusta el tamaño de la imagen */
+            height: auto; /* Mantiene la proporción de la imagen */
+            border-radius: 10px; /* Bordes redondeados para la imagen */
+            margin-bottom: 10px; /* Espacio debajo de la imagen */
+        }
+
+        .book-item:hover {
+            transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse */
+            background-color: #d76d6d; /* Color de fondo al pasar el mouse */
+            color: white; /* Cambia el color del texto al pasar el mouse */
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #d76d6d; /* Color rojo */
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .book-item {
+                width: 100%; /* Hacer que los botones ocupen el 100% del ancho en pantallas pequeñas */
+                height: auto; /* Altura automática para que se ajuste el texto */
+                padding: 15px; /* Espacio interno reducido */
+            }
+
+            header, footer {
+                padding: 10px; /* Espacio reducido en móviles */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Libros de Primero</h1>
+        <a href="index.html" style="color: white; text-decoration: underline;">Volver a la Biblioteca</a>
+    </header>
+    <main>
+        <div class="book-list">
+            <a href="ruta/a/tu/libro1.pdf" class="book-item">
+                <img src="imagenes/libro1.png" alt="Libro Ejemplo 1">
+                Libro Ejemplo 1
+            </a>
+            <a href="ruta/a/tu/libro2.pdf" class="book-item">
+                <img src="imagenes/libro2.png" alt="Libro Ejemplo 2">
+                Libro Ejemplo 2
+            </a>
+            <a href="ruta/a/tu/libro3.pdf" class="book-item">
+                <img src="imagenes/libro3.png" alt="Libro Ejemplo 3">
+                Libro Ejemplo 3
+            </a>
+            <a href="ruta/a/tu/libro4.pdf" class="book-item">
+                <img src="imagenes/libro4.png" alt="Libro Ejemplo 4">
+                Libro Ejemplo 4
+            </a>
+            <a href="ruta/a/tu/libro5.pdf" class="book-item">
+                <img src="imagenes/libro5.png" alt="Libro Ejemplo 5">
+                Libro Ejemplo 5
+            </a>
+            <a href="ruta/a/tu/libro6.pdf" class="book-item">
+                <img src="imagenes/libro6.png" alt="Libro Ejemplo 6">
+                Libro Ejemplo 6
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Biblioteca Virtual</p>
+    </footer>
+</body>
+</html>
