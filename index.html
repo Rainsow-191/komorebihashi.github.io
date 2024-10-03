@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff3e0; /* Color más claro */
+            color: #333;
+            text-align: center;
+            padding: 20px; /* Espacio adicional alrededor del contenido */
+        }
+
+        header {
+            background-color: #d76d6d; /* Color rojo */
+            padding: 20px;
+            color: white;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center; 
+            margin: 20px;
+        }
+
+        .category {
+            background-color: #ffccbc; 
+            border: 2px solid #d76d6d; 
+            border-radius: 15px; 
+            padding: 30px; 
+            margin: 15px; 
+            width: 90%; /* Cambiado a 90% */
+            max-width: 220px; /* Máximo ancho */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+            transition: transform 0.2s;
+            text-decoration: none; 
+            color: inherit; 
+        }
+
+        .category:hover {
+            transform: scale(1.1); 
+            cursor: pointer; 
+        }
+
+        h2 {
+            color: #b71c1c; 
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #d76d6d; 
+            color: white;
+        }
+
+        .panda-image {
+            width: 100px; 
+            margin-bottom: 15px; 
+        }
+
+        @media (max-width: 600px) {
+            .category {
+                margin: 10px; 
+            }
+
+            header, footer {
+                padding: 10px; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Biblioteca Virtual ¡HAPPY 2009!</h1>
+    </header>
+    <main>
+        <div class="category">
+            <a href="primero.html">
+                <img src="ruta/a/tu/imágen1.png" alt="" class="panda-image">
+                <h2>Primero</h2>
+                <p>Próximamente</p>
+            </a>
+        </div>
+        <div class="category">
+            <a href="segundo.html">
+                <img src="ruta/a/tu/imágen2.png" alt="" class="panda-image">
+                <h2>Segundo</h2>
+                <p>Próximamente</p>
+            </a>
+        </div>
+        <div class="category">
+            <a href="tercero.html">
+                <img src="ruta/a/tu/imágen3.png" alt="" class="panda-image">
+                <h2>Tercero</h2>
+                <p>Próximamente</p>
+            </a>
+        </div>
+        <div class="category">
+            <a href="cuarto.html">
+                <img src="ruta/a/tu/imágen4.png" alt="" class="panda-image">
+                <h2>Cuarto</h2>
+                <p>Próximamente</p>
+            </a>
+        </div>
+        <div class="category">
+            <a href="quinto.html">
+                <img src="ruta/a/tu/imágen5.png" alt="" class="panda-image">
+                <h2>Quinto</h2>
+                <p>¡Bienvenido a la biblioteca!</p>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Biblioteca Virtual</p>
+    </footer>
+</body>
+</html>
